@@ -5,3 +5,5 @@ export const FourOhFour = () => {
     <div>FourOhFour</div>
   )
 }
+
+export default FourOhFour;

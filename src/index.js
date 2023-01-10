@@ -4,22 +4,20 @@ import './index.css';
 import './Style/Fonts/NunitoSans-Regular.ttf';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { Home } from './Pages/Home';
-import { About } from './Pages/About';
-import { Portfolio } from './Pages/Portfolio';
-import { FourOhFour } from './Pages/FourOhFour';
-import { Layout } from './Pages/Layout';
+// TODO: Fix barreling
+import Home from './Pages/Home/Home.tsx';
+import About from './Pages/About/About.tsx';
+import Portfolio from './Pages/Portfolio/Portfolio.tsx';
+import { FourOhFour } from './Pages/FourOhFour/FourOhFour.tsx';
 
 export default function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route index element={<Home />} />
-                    <Route path="About" element={<About />} />
-                    <Route path="Porfolio" element={<Portfolio />} />
-                    <Route path="*" element={<FourOhFour />} />
-                </Route>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="*" element={<FourOhFour />} />
             </Routes>
         </BrowserRouter>
     )
