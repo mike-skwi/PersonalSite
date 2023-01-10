@@ -1,13 +1,12 @@
-import './App.css';
+import React from 'react'
 
-export const App = () => {
-
+export const Layout = () => {
     const headerItems = [
         { name: 'Home', route: '/home' }
     ]
 
     return (
-        <div className="App">
+        <>
             <header className="App-header" >
                 <p>Mike Skwierawski</p>
                 {/* TODO: Make a header button component */}
@@ -25,8 +24,6 @@ export const App = () => {
             <footer>
                 <p>:)</p>
             </footer>
-        </div >
-    );
+        </>
+    )
 }
-
-export default App;
