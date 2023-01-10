@@ -13,6 +13,12 @@ code {
 }
 
 @font-face {
-  font-family: 'Nunito';
-  src: local('Nunito'), url(./Style/Fonts/NunitoSans-Regular.ttf) format('ttf');
+  font-family: "Nunito";
+  src: url('./Style/Fonts/NunitoSans-Regular.ttf') format("truetype");
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Nunito";
+  font-weight: 400;
 }

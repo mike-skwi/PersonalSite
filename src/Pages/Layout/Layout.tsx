@@ -1,28 +1,19 @@
 import React from 'react'
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import './Layout.css';
+
+// TODO: fix barreling
+import { HeaderBar } from '../../Components/HeaderBar/HeaderBar.tsx'
 
 export const Layout = () => {
     return (
-        <>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/portfolio">Portfolio</Link>
-                    </li>
-                    {/* <li>
-                        <Link to="/Contact">Contact</Link>
-                    </li> */}
-                </ul>
-            </nav>
-
+        <div className="Layout-container">
+            <div className="Header-container">
+                <h1>Mike Skwierawski</h1>
+                <HeaderBar />
+            </div>
             <Outlet />
-        </>
+        </div>
     )
 }
 

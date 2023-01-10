@@ -1,0 +1,31 @@
+.Header-container {
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+}
+
+/* .Layout-container {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  } */
+
+  @media (min-width: 62.1rem) and (max-width: 82rem) { 
+  }
+
+  @media (min-width: 43.1rem) and (max-width: 62rem) { 
+  }
+
+  @media (max-width: 43rem) { 
+    p {
+        font-size: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.4rem;
+    }
+  
+    .Layout-container {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
