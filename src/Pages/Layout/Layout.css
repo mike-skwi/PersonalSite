@@ -9,6 +9,18 @@
     align-items: center;
   } */
 
+  .Divider {
+      position: relative;
+      top: -8px;
+      margin-top: -1px;
+      border-top: 1px solid green;
+      box-shadow: 0 1px 4px 0 green;
+      /* TODO: make this cool https://www.w3schools.com/cssref/css3_pr_transform.php */
+      transform: rotate(1deg), scaleY(20deg);    
+      -ms-transform: rotate(1deg);
+      -webkit-transform: rotate(1deg);
+  }
+
   @media (min-width: 62.1rem) and (max-width: 82rem) { 
   }
 
@@ -21,7 +33,7 @@
     }
     
     h1 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
   
     .Layout-container {

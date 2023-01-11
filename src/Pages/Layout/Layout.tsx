@@ -12,6 +12,7 @@ export const Layout = () => {
                 <h1>Mike Skwierawski</h1>
                 <HeaderBar />
             </div>
+            <div className="Divider" />
             <Outlet />
         </div>
     )

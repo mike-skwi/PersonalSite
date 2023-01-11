@@ -1,5 +1,6 @@
 import React from 'react'
 import { HeaderBarItem } from '../HeaderBarItem/HeaderBarItem.tsx'
+import "./HeaderBar.css"
 
 export const HeaderBar = () => {
 
@@ -13,11 +14,11 @@ export const HeaderBar = () => {
     // TODO: Make this collapsible if on mobile
 
     return (
-        <>
+        <div className="Header-bar-container">
             {headerItems.map(i =>
                 <HeaderBarItem name={i.name} route={i.route} />
             )}
-        </>
+        </div>
     )
 }
 
